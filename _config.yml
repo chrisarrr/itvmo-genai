@@ -22,8 +22,8 @@ title: IT Vendor Management Office
 email: itvmo@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Official Website of the IT Vendor Management Office.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://itvmo.gsa.gov" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/site/chrisarrr/itvmo-genai" # the subpath of your site, e.g. /blog
+url: "https://federalist-5c8ed902-1d10-4f82-b19a-670fcdb55716.sites.pages.cloud.gov" # the base hostname & protocol for your site, e.g. http://example.com
 # logo: /assets/images/logos/ITVMO_logo_whitetext.svg
 logo: /assets/images/logos/ITVMO_logo_whitetext.svg
 
