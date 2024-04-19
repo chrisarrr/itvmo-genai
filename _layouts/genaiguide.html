@@ -1,0 +1,29 @@
+---
+layout: base
+---
+
+{% comment %}
+This template is for a single page that does not have a date associated with it. For example, an about page.
+{% endcomment %}
+
+<!-- If the page is not redesign use the default page setup. -->
+{% if page.synthetic-content != true %}
+<p>This page contains synthetic content</p>
+{% else %}
+<p>This page doesn't contain synthetic content</p>
+{% endif %}
+<div id="main-content" class="usa-layout-docs usa-section">
+    <div class="grid-container">
+      <div class="grid-row grid-gap">
+   
+          {% if guidenav == true %}
+           {% include "guidenav.html" %} 
+        {% endif %}
+           
+          <div class="usa-layout-docs__main tablet:grid-col-9 usa-prose">
+              {{ content }}
+          </div>
+  
+      </div>
+    </div>
+  </div>
