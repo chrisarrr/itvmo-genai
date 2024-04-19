@@ -87,6 +87,8 @@ primary_navigation:
     url: /services/
   - name: Resources
     url: /resources/
+  - name: Gen AI Guide
+    url: /genai/
 
 secondary_navigation:
   - name: IT Vehicles
