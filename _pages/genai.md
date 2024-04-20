@@ -12,5 +12,4 @@ guidenav: true
 synthetic-content: true
 ---
 
-
 {% include genai-guide.html %}
