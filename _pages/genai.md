@@ -1,9 +1,9 @@
 ---
 title: Gen AI
-title-image: "/assets/images/icons/page_icons/about-itvmo.svg"
+title-image: "/assets/images/genai/ai-guide-icon-dark.png"
 heading-description: "Governmentwide best practices for buying generative artificial intelligence."
 description: "This website is designed to help Federal purchasers acquire generative AI and specialized computing infrastructure for their organizations."
-layout: genaiguide
+layout: page
 permalink: /collaborations/genai/
 sidenav: false
 redesign: true
@@ -12,6 +12,5 @@ guidenav: true
 synthetic-content: true
 ---
 
-<article class="usa-prose">
-{% include guidance-content.html %}
-</article>
+
+{% include genai-guide.html %}
