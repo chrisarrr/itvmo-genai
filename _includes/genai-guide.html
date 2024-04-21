@@ -3507,10 +3507,9 @@
         identify government-wide contract vehicles that agencies have used to
         procure Generative AI and Specialized Computing Infrastructure.
       </p>
-      <h3 id="" class="sub-topic-heading">About the dashboard</h3>
+      <h3 id="dashboard-about" class="sub-topic-heading">Data source</h3>
       <p class="tab-p">
-        Updated monthly, the Dashboard draws from the Federal Procurement Data
-        System (FPDS) to present data from FY20 onwards. The date of the latest
+        Updated monthly, the Dashboard draws from the <a href="https://www.fpds.gov/" title="Federal Procurement Data System" target="_blank" class="usa-link--external">Federal Procurement Data System</a> (FPDS) to present data from FY20 onwards. The date of the latest
         dashboard update is prominently displayed next to the Dashboard title,
         ensuring users are aware of the currentness of the information provided.
         Our data review process encompasses all Level 1 categories, excluding
@@ -3533,7 +3532,7 @@
         Infrastructure.
       </p>
       <h3 id="" class="sub-topic-heading">Views</h3>
-      <h4 id="" class="">Vendor count</h4>
+      <h4 id="view-vendor-count" class="">Vendor count</h4>
       <p class="tab-p">
         The FPDS exclusively features Prime Vendors. The Vendor Count view
         presents the count of Prime Vendors according to the Contract Vehicle
@@ -3544,7 +3543,7 @@
         contracts, among other designations, especially for AI or specialized
         computing infrastructure solutions.
       </p>
-      <h4 id="" class="">Level 3</h4>
+      <h4 id="view-level-3" class="">Level 3</h4>
       <p class="tab-p">
         Utilizing the tiered categorization system from the FPDS, this view
         offers a detailed exploration of procurement data. The FPDS organizes
@@ -3560,7 +3559,7 @@
         procured and see how many Prime Vendors are selling goods in services in
         a category.
       </p>
-      <h4 id="" class="">Obligations trends</h4>
+      <h4 id="view-obligations-trends" class="">Obligations trends</h4>
       <p class="tab-p">
         The Obligations View, intended for observing general purchasing patterns
         rather than detailed spend analysis, highlights departmental purchasing
@@ -3578,7 +3577,7 @@
         Infrastructure and how obligations for Specialized Computing
         Infrastructure have been trending from FY20 to present.
       </p>
-      <h4 id="" class="">PSC</h4>
+      <h4 id="view-psc" class="">PSC</h4>
       <p class="tab-p">
         The Obligations View, intended for observing general purchasing patterns
         rather than detailed spend analysis, highlights departmental purchasing
@@ -3596,7 +3595,7 @@
         Infrastructure and how obligations for Specialized Computing
         Infrastructure have been trending from FY20 to present.
       </p>
-      <h4 id="" class="">NAICS</h4>
+      <h4 id="view-naics" class="">NAICS</h4>
       <p class="tab-p">
         The NAICS View employs the North American Industry Classification System
         (NAICS) codes to provide a view of Prime Vendors activities per NAICS
@@ -3610,9 +3609,7 @@
         <li>The third digit specifies the subsector,</li>
         <li>The fourth digit defines the industry group,</li>
         <li>The fifth digit describes the industry itself,</li>
-        <li>
-          The sixth digit is reserved for national industry specifications.
-        </li>
+        <li>The sixth digit is reserved for national industry specifications.</li>
       </ul>
       <p class="tab-p">
         By utilizing this view, dashboard users can gain insights into the
@@ -3631,6 +3628,28 @@
           >North American Industry Classification System website</a
         >.
       </p>
+      <h4 id="view-available-contracts" class="">Available contracts</h4>
+      <p class="tab-p">
+        This segment of the dashboard focuses on the Procurement Instrument
+        Identification, commonly referred to as PIID, Reference PIID, or
+        Contract ID. The PIID is an identifier within government procurement,
+        acting as a unique number assigned to each contract, agreement, or
+        order. It serves as a key for conducting in-depth research on specific
+        contract vehicles, especially those pertaining to the acquisition of
+        Generative AI and Specialized Computing Infrastructure.
+      </p>
+      <p class="tab-p">
+        In this view, users are presented with a list of PIIDs or Contract IDs
+        corresponding to active and past contracts involved in procuring
+        Generative AI and Specialized Computing Infrastructure. This inclusion
+        helps acquisition workforce members and decision-makers seeking to
+        explore and analyze contracts that they may be able to consult for more
+        information. The PIIDs provided in the dashboard are gateways to
+        contractual information. By using these identifiers, users can access
+        detailed contract documents, performance reports, financial terms, and
+        Prime Vendor information that may help inform their own Generative AI
+        and Specialized Computing Infrastructure acquisitions.
+      </p>
     </div>
     <div class="content-nav">
       <div class="nav-list">
@@ -3643,11 +3662,60 @@
           >Overview</a
         >
         <a
-          id="sn-foww"
+          id="db-a"
           class="page-nav"
-          href="#foww"
+          href="#dashboard-about"
           onclick="return removeTabContent(this)"
-          >Future of Workstations Whitepaper</a
+          >Data source</a
+        >
+        <a
+          id="view-vendor"
+          class="page-nav"
+          href="#view-vendor-count"
+          onclick="return removeTabContent(this)"
+          >View: Vendor count</a
+        >
+        <a
+          id="view-l3"
+          class="page-nav"
+          href="#view-level-3"
+          onclick="return removeTabContent(this)"
+          >View: Level 3</a
+        >
+        <a
+          id="view-obligations"
+          class="page-nav"
+          href="#view-obligations-trends"
+          onclick="return removeTabContent(this)"
+          >View: Obligations trends</a
+        >
+        <a
+          id="view-vendor"
+          class="page-nav"
+          href="#view-vendor-count"
+          onclick="return removeTabContent(this)"
+          >View: Vendor count</a
+        >
+        <a
+          id="view-p"
+          class="page-nav"
+          href="#view-psc"
+          onclick="return removeTabContent(this)"
+          >View: PSC</a
+        >
+        <a
+          id="view-n"
+          class="page-nav"
+          href="#view-naics"
+          onclick="return removeTabContent(this)"
+          >View: PSC</a
+        >
+        <a
+          id="view-ac
+          class="page-nav"
+          href="#view-available-contracts"
+          onclick="return removeTabContent(this)"
+          >View: Available contracts</a
         >
       </div>
     </div>
@@ -3683,7 +3751,6 @@
         to connect directly with our team.
       </p>
       <div class="tab-divide-line"></div>
-
     </div>
     <div class="content-nav">
       <div class="nav-list">
