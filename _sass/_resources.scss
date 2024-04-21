@@ -3145,7 +3145,19 @@ html *
   border-radius: 10px 10px 0px 0px;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1299px) {
+/* Specific media query for ai-guide tabs */
+@media screen and (max-width: 1023px) {
+  #ai-guide-mobile-tabs {
+    visibility: visible;
+    max-height: fit-content;
+  }
+  .ai-guide-tabs {
+    visibility: hidden;
+    max-height: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
   #ai-guide-mobile-tabs {
     visibility: hidden;
     max-height: 0;
@@ -3155,7 +3167,6 @@ html *
     max-height: none;
   }
 }
-
 /*Tabs swap to Tabs mobile version when reach the certain width.*/
 @media screen and (max-width: 1300px) {
   #tabs-mobile-container
