@@ -1,8 +1,8 @@
 ---
-title: Generative AI Acquisition Resource Guide
+title: Generative AI Acquisition Resource Center
 title-image: "/assets/images/genai/ai-guide-icon-dark.svg"
 heading-description: "Governmentwide best practices for buying generative artificial intelligence."
-description: "This website is designed to help Federal purchasers acquire generative AI and specialized computing infrastructure for their organizations."
+description: "Governmentwide best practices for getting generative artificial intelligence and related infrastructure."
 layout: page
 permalink: /collaborations/genai/
 sidenav: false
