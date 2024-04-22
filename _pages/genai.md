@@ -2,7 +2,7 @@
 title: Generative AI and Specialized Computing Infrastructure Acquisition Resource Guide
 title-image: "/assets/images/genai/ai-guide-icon-dark.svg"
 heading-description: "Governmentwide best practices for buying generative artificial intelligence."
-description: "Governmentwide best practices for getting generative artificial intelligence and related infrastructure."
+description: ""
 layout: page
 permalink: /collaborations/genai/
 sidenav: false
