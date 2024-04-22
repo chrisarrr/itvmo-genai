@@ -2955,53 +2955,37 @@ html *
 
   }
 }
-#ai-guide-mobile-tabs {
-  width: auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: #f6f6f6;
-  visibility: hidden;
-  max-height: 0;
-  #ai-guide-tabs-mobile {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 44px;
-    padding: 3px 3em 0 1em;
-    border: 1px solid #ff590a;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url("../images/icons/arrow-down.svg") no-repeat #fff;
-    background-position: right 4% bottom 50%;
-    text-overflow: ellipsis;
-    color: #062348;
-    font-weight: 400;
-    font-size: 1rem;
-  }
+$background-default: #f6f6f6;
+$border-orange: #ff590a;
+$font-color-dark: #062348;
+$font-color-light: #555555;
+$white: #fff;
+
+// Mixin for appearance reset
+@mixin appearance-none {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-#tabs-mobile-container {
+#ai-guide-mobile-tabs, #tabs-mobile-container {
   width: auto;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: #f6f6f6;
+  padding: 0 30px;
+  background-color: $background-default;
   visibility: hidden;
   max-height: 0;
-  #tabs-mobile {
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+  select {
+    margin: 10px 0;
     width: 100%;
     height: 44px;
     padding: 3px 3em 0 1em;
-    border: 1px solid #ff590a;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url("../images/icons/arrow-down.svg") no-repeat #fff;
+    border: 1px solid $border-orange;
+    @include appearance-none;
+    background: url("../images/icons/arrow-down.svg") no-repeat $white;
     background-position: right 4% bottom 50%;
     text-overflow: ellipsis;
-    color: #062348;
+    color: $font-color-dark;
     font-weight: 400;
     font-size: 1rem;
   }
@@ -3010,41 +2994,74 @@ html *
 .tabs, .ai-guide-tabs {
   width: 100%;
   background-color: #f1f1f1;
-  border-bottom: 1px solid #ff590a;
+  border-bottom: 1px solid $border-orange;
   display: inline-block;
   position: relative;
-  padding-top: 17px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 17px 25px;
   
   a {
     display: block;
-    border-bottom: 1px solid #ff590a;
+    border-bottom: 1px solid $border-orange;
     height: 49px;
-    position: relative;
-    margin-bottom: -1px;
     background-color: inherit;
     float: left;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s;
+    transition: background-color 0.3s, color 0.3s; // Optimized transitions
     font-size: 18px;
-    color: #555555;
+    color: $font-color-light;
     font-weight: 500;
-    letter-spacing: normal;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    
+    &.active-tab {
+      color: $font-color-dark;
+      background-color: $white;
+      border: 1px solid $border-orange;
+      border-bottom-color: $white;
+      outline: none !important;
+    }
   }
-  
-  a:hover {
-    text-decoration: underline;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1023px) {
+  #ai-guide-mobile-tabs {
+    visibility: visible;
+    max-height: fit-content;
   }
-  
-  .active-tab {
-    color: #062348;
-    font-weight: 650;
-    background-color: white;
-    border: 1px solid #ff590a;
-    border-bottom: 1px solid white;
-    outline: none !important;
+  .ai-guide-tabs {
+    visibility: hidden;
+    max-height: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #ai-guide-mobile-tabs {
+    visibility: hidden;
+    max-height: 0;
+  }
+  .ai-guide-tabs {
+    visibility: visible;
+    max-height: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #tabs-mobile-container {
+    visibility: visible;
+    max-height: fit-content;
+  }
+  .tabs {
+    visibility: hidden;
+    max-height: 0;
+  }
+  .tabcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -3143,53 +3160,6 @@ html *
 .tabs-border
 {
   border-radius: 10px 10px 0px 0px;
-}
-
-/* Specific media query for ai-guide tabs */
-@media screen and (max-width: 1023px) {
-  #ai-guide-mobile-tabs {
-    visibility: visible;
-    max-height: fit-content;
-  }
-  .ai-guide-tabs {
-    visibility: hidden;
-    max-height: 0;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #ai-guide-mobile-tabs {
-    visibility: hidden;
-    max-height: 0;
-  }
-  .ai-guide-tabs {
-    visibility: visible;
-    max-height: none;
-  }
-}
-/*Tabs swap to Tabs mobile version when reach the certain width.*/
-@media screen and (max-width: 1300px) {
-  #tabs-mobile-container
-  {
-    visibility: visible;
-    max-height: fit-content;
-  }
-  .tabs
-  {
-    visibility: hidden;
-    max-height: 0;
-  }
-  .tabcontent
-  {
-    .tab-img-p
-    {
-      display: flex;
-      flex-direction: column;
-      column-gap: 10px;
-      align-items: center;
-    }
-  }
-
 }
 
 

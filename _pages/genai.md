@@ -1,5 +1,5 @@
 ---
-title: Generative AI Acquisition Resource Center
+title: Gen AI Acquisition Hub
 title-image: "/assets/images/genai/ai-guide-icon-dark.svg"
 heading-description: "Governmentwide best practices for buying generative artificial intelligence."
 description: "Governmentwide best practices for getting generative artificial intelligence and related infrastructure."
